@@ -8,3 +8,8 @@ libraryDependencies += "org.scalatest" %% "scalatest" % "2.2.6" % "test"
 
 libraryDependencies += "junit" % "junit" % "4.10" % Test
 
+scalacOptions += "-Ypartial-unification"
+
+libraryDependencies += "org.typelevel" %% "cats-core" % "2.0.0"
+
+libraryDependencies += "org.typelevel" %% "cats-effect" % "2.0.0"
