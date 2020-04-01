@@ -1,4 +1,5 @@
-import helloWorld.HelloWorld
+package helloWorld
+
 import org.scalatest.FunSuite
 
 class HelloWorldTest extends FunSuite{
