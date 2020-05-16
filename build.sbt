@@ -11,3 +11,7 @@ libraryDependencies += "junit" % "junit" % "4.10" % Test
 libraryDependencies += "org.typelevel" %% "cats-core" % "2.0.0"
 
 libraryDependencies += "org.typelevel" %% "cats-effect" % "2.0.0"
+
+libraryDependencies += "com.typesafe.akka" %% "akka-actor" % "2.4.0"
+
+libraryDependencies += "org.scalacheck" %% "scalacheck" % "1.14.1" % "test"
