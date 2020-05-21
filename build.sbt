@@ -17,3 +17,8 @@ libraryDependencies += "org.scala-lang.modules" %% "scala-xml" % "1.0.3"
 libraryDependencies += "com.typesafe.akka" %% "akka-actor" % "2.4.0"
 
 libraryDependencies += "org.scalacheck" %% "scalacheck" % "1.14.1" % "test"
+
+libraryDependencies ++= Seq(
+  "org.apache.httpcomponents" % "httpclient" % "4.5.3",
+  "org.apache.commons" % "commons-lang3" % "3.6"
+)
