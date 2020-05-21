@@ -37,12 +37,10 @@ class GoodbyeActor extends Actor with ActorLogging {
     private def handleGoodbye {
         brain ! SpeakText(getRandomGoodbyePhrase)
         Thread.sleep(500)
-        // TODO a better way to do this?
         context.system.terminate
         System.exit(0)
     }
 
-    // TODO (DRY - repeated in HelloActor)
     private def isAPhraseWeUnderstand(phrase: String): Boolean = {
         for (s <- goodbyeRegexesWeRespondTo) {
             if (phrase.matches(s)) return true;

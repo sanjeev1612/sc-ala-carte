@@ -10,8 +10,9 @@ object CLAlexa extends App {
     val goodbyeActor       = system.actorOf(Props[GoodbyeActor],       name = "GoodbyeActor")
     val helloActor         = system.actorOf(Props[HelloActor],         name = "HelloActor")
     val toDoListActor      = system.actorOf(Props[ToDoListActor],      name = "ToDoListActor")
-    val tribuneSportsActor = system.actorOf(Props[TribuneSportsActor], name = "TribuneSportsActor")
     val timeActor       = system.actorOf(Props[TimeActor],       name = "TimeActor")
+    val windowAppActor       = system.actorOf(Props[WindowsAppActor],       name = "WindowsAppActor")
+
 
     val ears  = system.actorOf(Props[Ears],  name = "Ears")
     val mouth = system.actorOf(Props[Mouth], name = "Mouth")

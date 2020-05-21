@@ -28,9 +28,9 @@ class BrainMessageProcessor extends Actor with ActorLogging {
     val goodbyeActor  = context.actorSelection("/user/GoodbyeActor")
     val helloActor    = context.actorSelection("/user/HelloActor")
     val toDoListActor = context.actorSelection("/user/ToDoListActor")
-    val tribuneSportsActor = context.actorSelection("/user/TribuneSportsActor")
     val timeactor  = context.actorSelection("/user/TimeActor")
-    val workers = List(goodbyeActor, helloActor, toDoListActor, tribuneSportsActor, timeactor)
+    val windowActor  = context.actorSelection("/user/WindowsAppActor")
+    val workers = List(goodbyeActor, helloActor, toDoListActor, timeactor,windowActor)
 
     def receive = {
         case MessageFromEars(msg) =>
@@ -58,7 +58,6 @@ class BrainMessageProcessor extends Actor with ActorLogging {
         implicit val timeout = Timeout(2 seconds)
         val listOfListOfPhrases = for (w <- workers) yield {
             val future = w ? WhatPhrasesCanYouHandle
-            //TODO how to handle PhrasesICanHandle?
             val phrases = Await.result(future, timeout.duration).asInstanceOf[Seq[String]]
             phrases
         }
