@@ -1,4 +1,4 @@
-package updateBoard
+package twitterboard
 
 trait NewsSourceInterface {
     def title: String

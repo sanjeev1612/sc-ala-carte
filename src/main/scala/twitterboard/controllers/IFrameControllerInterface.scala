@@ -1,4 +1,4 @@
-package updateBoard.controllers
+package twitterboard.controllers
 
 import java.awt.Dimension
 

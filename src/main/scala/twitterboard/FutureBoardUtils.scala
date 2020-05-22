@@ -1,10 +1,10 @@
-package updateBoard
+package twitterboard
 
 import java.awt.Dimension
 import java.awt.event.{ActionEvent, ActionListener, WindowAdapter, WindowEvent}
 
 import javax.swing._
-import updateBoard.controllers.{IFrameControllerInterface, NewsSourceIFrameController}
+import twitterboard.controllers.{IFrameControllerInterface, NewsSourceIFrameController}
 
 object FutureBoardUtils {
 

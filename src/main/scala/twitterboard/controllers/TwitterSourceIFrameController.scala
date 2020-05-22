@@ -1,8 +1,8 @@
-package updateBoard.controllers
+package twitterboard.controllers
 
 import javax.swing.JInternalFrame
-import updateBoard.TwitterSource
-import updateBoard.utils.{NetworkUtils, SwingUtils, TwitterUtils}
+import twitterboard.TwitterSource
+import twitterboard.utils.{NetworkUtils, SwingUtils, TwitterUtils}
 
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.Future

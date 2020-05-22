@@ -1,4 +1,4 @@
-package updateBoard.utils
+package twitterboard.utils
 
 import org.apache.commons.lang3.StringEscapeUtils
 import org.htmlcleaner.HtmlCleaner

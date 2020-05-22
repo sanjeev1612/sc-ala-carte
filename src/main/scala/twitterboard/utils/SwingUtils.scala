@@ -1,4 +1,4 @@
-package updateBoard.utils
+package twitterboard.utils
 
 import javax.swing.SwingUtilities
 
