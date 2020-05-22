@@ -6,7 +6,7 @@ case class Person(id: Int, name: String, age: Int)
 
 object Person {
   implicit val showPerson: Show[Person] = new Show[Person] {
-    override def show(t: Person): String = s"${t.name}--${t.id}--${t.age}"
+    override def show(t: Person): String = s"Name : ${t.name}   Id : ${t.id}   Age : ${t.age}"
   }
 }
 
