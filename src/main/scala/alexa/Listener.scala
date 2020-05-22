@@ -2,7 +2,7 @@ package alexa
 
 import akka.actor.{Actor, ActorLogging}
 
-class Ears extends Actor with ActorLogging {
+class Listener extends Actor with ActorLogging {
 
     val brain = context.actorSelection("/user/Brain")
 

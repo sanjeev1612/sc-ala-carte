@@ -2,7 +2,7 @@ package alexa
 
 import akka.actor.{Actor, ActorLogging}
 
-class Mouth extends Actor with ActorLogging {
+class VoiceController extends Actor with ActorLogging {
 
     def receive = {
 
