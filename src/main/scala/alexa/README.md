@@ -3,6 +3,8 @@ Command Line Alexa
 
 This package (*alexa*) contains the source code for command line Alexa 
 
+`Start App by running CLAlexa`
+
 **it has following capabilities :**
 
 1) Say Hi/Hello ... you would get random response
@@ -11,16 +13,12 @@ This package (*alexa*) contains the source code for command line Alexa
 - Commands 
 todo add sanjeev
 todo add ranjan
-todo list
+todo list (for viewing todo)
 todo del sanjeev
+todo rem (remove all todo)
 4) **Get Time and Date** 
-5) In Progress ...... -:)
+5) _`In Progress ...... -:)`_
 
 
-
-
-
-
-_Start App by running CLAlexa_
 
 
