@@ -1,4 +1,4 @@
-package alexa
+package alexademo
 
 
 case object Hello

@@ -1,4 +1,4 @@
-package alexa
+package alexademo
 
 import java.util.Scanner
 

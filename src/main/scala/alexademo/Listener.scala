@@ -1,4 +1,4 @@
-package alexa
+package alexademo
 
 import akka.actor.{Actor, ActorLogging}
 

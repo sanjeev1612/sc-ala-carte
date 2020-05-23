@@ -1,5 +1,6 @@
-package cats
+package catsdemo
 
+import cats.Show
 import cats.syntax.show._
 
 case class Person(id: Int, name: String, age: Int)

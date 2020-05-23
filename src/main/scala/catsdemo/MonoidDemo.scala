@@ -1,4 +1,4 @@
-package cats
+package catsdemo
 
 //RULE # Associative (order of operation doesn't matter ) Also, has an identity element
 

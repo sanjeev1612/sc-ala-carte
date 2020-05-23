@@ -1,8 +1,9 @@
-package cats
+package catsdemo
 
 import cats.syntax.eq._
 import cats.instances.int._
 import cats.instances.option._
+import cats.kernel.Eq
 import cats.syntax.option._
 
 
