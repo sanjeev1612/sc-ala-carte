@@ -6,7 +6,6 @@ import cats.instances.option._
 import cats.kernel.Eq
 import cats.syntax.option._
 
-
 case class Cat(name: String, age: Int, color: String)
 
 object Cat {

@@ -43,3 +43,9 @@ import cats.instances.list._ // for Monad
 sumSquare(Option(3), Option(4))
 sumSquare(List(1, 2, 3), List(4, 5))
 
+import cats.data.Writer
+import cats.instances.vector._ // for Monoid
+Writer(Vector(
+  "It was the best of times",
+  "it was the worst of times"
+), 1859)
