@@ -9,7 +9,6 @@ trait UpdateControllerInterface {
 
 object FutureBoard extends App with UpdateControllerInterface {
 
-    // swing things
     val jFrame = new JFrame("Twitter Hash Tags")
     val desktopPane = new JDesktopPane()
     val menuBar = new JMenuBar()

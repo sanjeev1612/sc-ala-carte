@@ -15,7 +15,6 @@ This package (*alexa*) contains the source code for command line Alexa
 - todo add ranjan
 - todo list (for viewing todo)
 - todo del sanjeev
-- todo rem (remove all todo)
 4) **Get Time and Date**  - ask time or date 
 5) _`In Progress ...... -:)`_
 
