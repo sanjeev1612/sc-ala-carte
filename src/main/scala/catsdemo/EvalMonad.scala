@@ -3,7 +3,7 @@ package catsdemo
 import cats.Eval
 
 object EvalDemo extends App {
-  println(factorialWithEval(5000).value)
+  println(factorialWithDefer(5000).value)
 
   def factorialWithEval(n: BigInt): Eval[BigInt] =
     if (n == 1) {

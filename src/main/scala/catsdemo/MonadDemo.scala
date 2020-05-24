@@ -21,5 +21,4 @@ object FutureMonad extends App {
         result1 + result2
       }
     }
-
 }
