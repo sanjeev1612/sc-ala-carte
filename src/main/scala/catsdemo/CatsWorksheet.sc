@@ -19,4 +19,27 @@ import cats.instances.list._
 doMath(Option(20))
 doMath(List(1, 2, 3))
 
+for {
+  x <- (1 to 3).toList
+  y <- (4 to 5).toList
+} yield (x, y)
+
+val list1 = (1 to 3).toList
+val list2 = (4 to 5).toList
+
+// break of for comprehension in flatmap and map
+list1.flatMap(a => list2.map(b => (a, b)))
+
+import cats.Monad
+import cats.syntax.functor._ // for map
+import cats.syntax.flatMap._ // for flatMap
+import scala.language.higherKinds
+
+def sumSquare[F[_] : Monad](a: F[Int], b: F[Int]): F[Int] =
+  a.flatMap(x => b.map(y => x * x + y * y))
+
+import cats.instances.option._ // for Monad
+import cats.instances.list._ // for Monad
+sumSquare(Option(3), Option(4))
+sumSquare(List(1, 2, 3), List(4, 5))
 
