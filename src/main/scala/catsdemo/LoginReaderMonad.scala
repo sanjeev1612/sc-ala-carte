@@ -1,9 +1,9 @@
 package catsdemo
+
 import cats.data.Reader
 
 
 case class Db(usernames: Map[Int, String], passwords: Map[String, String])
-
 
 object LoginReaderMonad extends App {
   type DbReader[A] = Reader[Db, A]
@@ -19,15 +19,15 @@ object LoginReaderMonad extends App {
       passwordOk <- username.map { username =>
         checkPassword(username, password)
       }.getOrElse {
-        false.pure[DbReader]
+        checkPassword("username", password)
       }
     } yield passwordOk
 
   val users = Map(1 -> "dade", 2 -> "kate", 3 -> "margo")
   val passwords = Map("dade" -> "zerocool", "kate" -> "acidburn", "margo" -> "secret")
   val db = Db(users, passwords)
-  checkLogin(1, "zerocool").run(db)
+  println(checkLogin(1, "zerocool").run(db))
   // res10: cats.Id[Boolean] = true
-  checkLogin(4, "davinci").run(db)
+  println(checkLogin(4, "davinci").run(db))
   // res11: cats.Id[Boolean] = false
 }
