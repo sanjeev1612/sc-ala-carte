@@ -14,7 +14,6 @@ object tester2 extends App {
   import JsonSyntax._
   import JsonWriterInstances._
 
-  val impPerson = implicitly[JsonWriter[Person]]
-  println(impPerson)
+
   println(Option(Person("Dave", "dave@example.com")).toJson)
 }

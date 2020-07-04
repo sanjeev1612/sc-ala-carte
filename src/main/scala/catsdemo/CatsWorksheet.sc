@@ -49,3 +49,9 @@ Writer(Vector(
   "It was the best of times",
   "it was the worst of times"
 ), 1859)
+
+def demoImplicits(param: String = "Hello")(implicit name: String): String = {
+  s"${param} your implicit parameter is ${name}"
+}
+implicit val str="implicit value"
+demoImplicits()

@@ -14,7 +14,6 @@ case object JsNull extends Json
 
 trait JsonWriter[A] {
   def write(value: A): Json
-
 }
 
 final case class Person(name: String, email: String)
